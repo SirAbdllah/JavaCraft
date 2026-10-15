@@ -3,7 +3,7 @@
 [![❤️ Donation](https://img.shields.io/badge/%E2%9D%A4_Donation-PayPal-ef4444?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/AAlqhtani581)
 [![Current Update](https://img.shields.io/badge/Current_Update-JavaCraft_v1.0-2ea44f?style=for-the-badge&logo=github)](#javacraft-10--base-open-source-release)
 [![JavaCraft Details](https://img.shields.io/badge/JavaCraft-Details-5865f2?style=for-the-badge&logo=minecraft&logoColor=white)](#how-it-works)
-[![Support & Updates](https://img.shields.io/badge/Support_%26_Updates-BS6_Discord-5865f2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/BS6)
+[![Support & Updates](https://img.shields.io/badge/Support_%26_Updates-BS6_Discord-5865f2?style=for-the-badge&logo=discord&logoColor=white)]([https://discord.com/invite/BS6](https://discord.com/invite/BS6))
 
 JavaCraft is an open-source launcher project by **V0BIT** for running a
 player's own Minecraft Java Edition installation through the Prospero Win
