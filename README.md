@@ -125,6 +125,18 @@ its settings/Toolbox when required, then reload etaHEN. Other HENs require a
 compatible app-jailbreak handler and allowlist. This does not add a firmware
 exploit; firmware 13.60 compatibility depends on the exact HEN build installed.
 
+## Linux PS5 uploader
+
+Run `python3 tools/javacraft-uploader-linux.py` on Linux. Enable FTP on the PS5,
+enter its local IP and FTP port, then choose Repair or Uninstall when an existing
+JavaCraft install is detected. For a new console it proceeds to Install. The
+uploader can optionally copy user mod JARs and prints the remote mods folder;
+JavaCraft and Black Shield Community files are protected. Select the local
+`Data` folder containing `homebrew/` and `prospero-win/` to begin transfer.
+Repair preserves worlds, screenshots, logs, player options and other Prospero
+profiles. Uninstall requires typing `DELETE` and removes the JavaCraft app and
+Minecraft prefix. See
+
 ## Build
 
 The PS5 app-folder build uses the pinned Prospero Win source and the PS5
