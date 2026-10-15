@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "javacraft_account",
+  "version": "1.0.2",
+  "name": "JavaCraft Account",
+  "description": "Microsoft device-code sign-in from Minecraft's title screen.",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.xxado.javacraft.account.JavaCraftAccountMod"]
+  },
+  "mixins": ["javacraft-account.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": ">=26.1.1 <26.4"
+  }
+}

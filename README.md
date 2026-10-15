@@ -3,7 +3,7 @@
 [![❤️ Donation](https://img.shields.io/badge/%E2%9D%A4_Donation-PayPal-ef4444?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/AAlqhtani581)
 [![Current Update](https://img.shields.io/badge/Current_Update-JavaCraft_v1.0-2ea44f?style=for-the-badge&logo=github)](#javacraft-10--base-open-source-release)
 [![JavaCraft Details](https://img.shields.io/badge/JavaCraft-Details-5865f2?style=for-the-badge&logo=minecraft&logoColor=white)](#how-it-works)
-[![Support & Updates](https://img.shields.io/badge/Support_%26_Updates-BS6_Discord-5865f2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/BS6))
+[![Support & Updates](https://img.shields.io/badge/Support_%26_Updates-BS6_Discord-5865f2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/BS6)
 
 JavaCraft is an open-source launcher project by **V0BIT** for running a
 player's own Minecraft Java Edition installation through the Prospero Win
@@ -14,7 +14,7 @@ project and is not affiliated with Mojang, Microsoft, or Sony.
 ## JavaCraft 1.0 — Base Open-Source Release
 
 This is the initial JavaCraft 1.0 source release by **V0BIT**. It includes the
-launcher, its PS5 uploader, the Black Shield Community client/server
+launcher, its PS5 uploader, the optional Black Shield Community client/server
 components, and build instructions. It is intended for personal use, learning,
 community contributions, and lawful modification under the licenses in this
 repository.
@@ -70,7 +70,8 @@ play online on authenticated servers.
 
 ## Automatic mod updates
 
-Before each game launch, JavaCraft checks the HTTPS feed. It stages
+Before each game launch, JavaCraft checks the HTTPS feed at
+`https://appt-engine.online/javacraft/mod-updates/manifest-v1.json`. It stages
 changed mod JARs, checks their size and SHA-256, then installs them before
 Minecraft starts. User-added mods are left alone. If the feed has not been
 published or the service is offline, JavaCraft keeps the already installed
@@ -107,7 +108,8 @@ deletes the JavaCraft app, emulator, Minecraft prefix, worlds, mods, runtime,
 settings and account data. Shared Prospero Win files and other apps' profiles
 are preserved. The uploader shows the v0bit credit and the
 [BS6 Discord](https://discord.com/BS6). FTP is unencrypted and the utility only
-accepts private IPv4 addresses.
+accepts private IPv4 addresses. Build it with
+`powershell -ExecutionPolicy Bypass -File tools/build-uploader.ps1`.
 
 The uploader detects the local `dist/PS5/data` package when run from the
 project's `dist` folder. Its Windows release archive does not bundle Minecraft
@@ -124,18 +126,6 @@ OnionHEN or etaHEN config. With etaHEN, enable app-jailbreak for the title in
 its settings/Toolbox when required, then reload etaHEN. Other HENs require a
 compatible app-jailbreak handler and allowlist. This does not add a firmware
 exploit; firmware 13.60 compatibility depends on the exact HEN build installed.
-
-## Linux PS5 uploader
-
-Run `python3 tools/javacraft-uploader-linux.py` on Linux. Enable FTP on the PS5,
-enter its local IP and FTP port, then choose Repair or Uninstall when an existing
-JavaCraft install is detected. For a new console it proceeds to Install. The
-uploader can optionally copy user mod JARs and prints the remote mods folder;
-JavaCraft and Black Shield Community files are protected. Select the local
-`Data` folder containing `homebrew/` and `prospero-win/` to begin transfer.
-Repair preserves worlds, screenshots, logs, player options and other Prospero
-profiles. Uninstall requires typing `DELETE` and removes the JavaCraft app and
-Minecraft prefix. See
 
 ## Build
 
