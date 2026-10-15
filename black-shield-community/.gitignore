@@ -1,0 +1,10 @@
+/build/
+/api/bin/
+/api/obj/
+/api/data/
+/paper-plugin/.gradle/
+/paper-plugin/build/
+*.p12
+*.pfx
+*.key
+*.crt
